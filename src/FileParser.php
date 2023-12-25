@@ -114,4 +114,9 @@ class FileParser {
     private function readLine($line) {
         return preg_split('/[\s\t]+/', $line, -1, PREG_SPLIT_NO_EMPTY);
     }
+
+    public function getData()
+    {
+        return $this->times;
+    }
 }
